@@ -1,3 +1,7 @@
+# To use this command, create a folder in this directory "C:\Program Files\WindowsPowerShell\Modules" with the name "ChromeBookmarkBackup".
+# Next, Save this file in that folder with the title ChromeBookmarkBackup.psm1
+# Now you should be able to open a powershell window and just tiype "Backup-ChromeBookmark" and you will have a backup located in "C:\ChromeBookmarksBackup"
+
 function Backup-ChromeBookmarks {
     # This is currently the default path for Chrome bookmarks. Can be edited if Google updates the default location. Pulls the username from the environment variable.
     $filePath = "C:\Users\$($env:UserName)\AppData\Local\Google\Chrome\User Data\Default\bookmarks"
