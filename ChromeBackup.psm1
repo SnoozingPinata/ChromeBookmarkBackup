@@ -37,8 +37,8 @@ Function Backup-ChromeBookmarks {
         If (Test-Path -Path $destinationPath) {
             Write-Verbose "Backup Successful."
         }
-        Write-Output "Backup Process has completed."
+        Write-Verbose "Backup Process has completed."
     } Else {
-        Write-Output "Could not find the source bookmarks file. Verify it is in $($BookmarkPath) and try again."
+        Write-Verbose "Could not find the source bookmarks file. Verify it is in $($BookmarkPath) and try again."
     }
 }
